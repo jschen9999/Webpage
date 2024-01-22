@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+    <title>四資迎新報名表</title>
+	<style type="text/css">
+        h1       { font-family: tahoma, helvetica, sans-serif; }
+        p        { font-size: xx-Large;font-family:'微軟正黑體',arial, sans-serif;color:#ffff99 }
+        .special { color: #d9b3ff ; }
+		@media screen { 
+			body  { background-image: url(12.jpg);
+					background-repeat:no-repeat;
+					background-size:cover;
+					background-position:center center;
+					background-attachment:fixed;
+					}
+		} /*for PC*/
+		@media screen and (min-device-width: 300px) and (max-device-width:700px)
+		{
+			body  { background-image: url(6.jpg);
+					background-repeat:no-repeat;
+					background-size:cover;
+					background-position:center center;
+					background-attachment:fixed;
+					}
+		}/* for iphone*/
+    </style>
+  </head>
+  <body>
+
+	<div class="container" style="margin:100px "></div>  
+	<div class="container">
+        <div class="row mb-5">
+			<div class="col-12 text-center"> 
+				<p style="font-size:80pt;color:white" text-shadow: 2px 3px 5px><strong>四資迎新報名表</strong></p>
+				<h4 class = "special">元智大學資訊學院(資工、資管、資傳、資英)聯合大迎新</h4>
+			</div>
+		</div>
+	</div>
+	<div class="container" style="margin:50px "></div>
+	<div class="container">
+        <div class="row mb-5">
+			<div class="col-12 text-center">
+				<h2 style="color:white "><strong>活動資訊</strong></h2>
+				<h4 class = "special">地點：元智大學(中壢區遠東路135號)</h4>
+				<h4 class = "special">時間：2020/08/XX~2020/08/XX</h4>
+			</div>
+		</div>
+	</div>
+	<form method="post" action="s1081535_HW2.php">
+	<div class="container" style="margin:50px "></div>
+	<div class="container">
+        <div class="row mb-5">
+			<div class="col-12 text-center">	
+				<h2 style="color:#ffff66 "><strong>請填寫下列表單</strong></h2>
+			</div>
+		</div>
+	</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">			
+					<p>
+						<label><strong>姓:</strong>
+							<input name="姓" placeholder = "王" required /> 
+						</label> 
+						<label><strong>名:</strong>
+						<input name="名" placeholder = "大明" required /> 
+						</label>
+					</p>
+					
+				</div>
+			</div>
+		</div>
+			
+			
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">		
+					<p>
+						<strong>性別</strong>
+				 	</p>
+					<p style="color:#e6ccb3 ">
+						<label>
+							<input name = "bng" type = "radio" value = "男生" checked>男生</label>
+						<label>
+							<input name = "bng" type = "radio" value = "女生">女生</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">	
+					<p>
+						<label><strong>生日:</strong>
+							  <input name="birthday" type = "date" />
+						</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">	
+					<p>			
+						<label><strong>身分證字號:</strong>
+							  <input name="pid" type = "text" pattern = "[A-Z][12]\d{8}" required />
+						</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">	
+					<p>
+						<label><strong>手機號碼:</strong>
+							<input name="phone" type = "text" pattern = "09\d{8}" required />
+						</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">	
+					<p>
+						<strong>Email(建議使用Gmail):</strong><br>
+						<label>
+							<input name="jsmail" type = "email" id = "email" placeholder = "name@domain.com" /> 
+						</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group"
+				><div class="col-12 text-center">	
+					<p>
+						<strong>飲食習慣:</strong><br>
+					</p>
+					<p style="color:#e6ccb3 ">
+				 
+						<label>
+							<input name = "food" type = "radio" value = "葷食" checked>葷食</label>
+						<label>
+							<input name = "food" type = "radio" value = "素食">素食</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">
+					
+					<p>
+						<strong>健康狀況(複選):</strong>
+					</p>
+					<p style="color:#e6ccb3 ">
+				 
+						<label>
+							<input name = "healthy" type = "checkbox" value = "氣喘" checked>氣喘</label>
+						<label>
+							<input name = "healthy" type = "checkbox" value = "懼高症">懼高症</label>
+						<label>
+							<input name = "healthy" type = "checkbox" value = "高血壓">高血壓</label>
+						<label>
+							<input name = "healthy" type = "checkbox" value = "蠶豆症">蠶豆症</label>
+						<label>
+							<input name = "healthy" type = "checkbox" value = "糖尿病">糖尿病</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">
+					
+					<p>
+						<strong>其他:</strong><br>
+						<label>
+							<textarea name = "others" rows = "4" cols = "36" placeholder ="其他補充事項"></textarea>
+						</label>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-12 text-center">			
+					
+					<p>
+						<input type = "submit" value = "Submit" />
+						<input type = "reset" value = "Clear" />
+					</p>
+
+			   </div>
+			</div>
+		</div>
+	</form>
+
+                        
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
